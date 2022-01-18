@@ -627,10 +627,10 @@ img {
     flex-direction: column;
   }
   .contactContent {
-    width: 90%;
+    width: 100%;
   }
   .contactForm {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
 }
