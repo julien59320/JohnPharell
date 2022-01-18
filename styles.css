@@ -384,6 +384,10 @@ img {
   margin-bottom: 1rem;
   color: var(--colorPrimary);
 }
+.footerCenter .social a {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
 
 .copyright {
   color: var(--grey);
