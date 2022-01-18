@@ -46,7 +46,8 @@ img {
 
 .background {
   background: var(--grey);
-  padding: 3rem;
+  padding: 3rem 0;
+  margin: 3rem 0;
 }
 
 /*---------debut code-------*/
@@ -471,6 +472,41 @@ img {
 .showText .reponse {
   display: flex;
 }
+/*---------PAGE Contact-------*/
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contact h3 {
+  margin: 2rem 0;
+  color: var(--colorPrimary);
+}
+.contactContent {
+  line-height: 1.5;
+  width: 40%;
+}
+.contactForm {
+  margin-left: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm input {
+  height: 4rem;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.contact select {
+  margin: 1rem 0;
+  height: 4rem;
+  padding-left: 2rem;
+}
+.contact textarea {
+  padding: 2rem;
+}
 
 /*---------MediaScreen Ecran 1200px-------*/
 @media only screen and (max-width: 1200px) {
@@ -586,6 +622,16 @@ img {
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 3rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contactContent {
+    width: 90%;
+  }
+  .contactForm {
+    width: 90%;
+    margin: 0;
   }
 }
 
