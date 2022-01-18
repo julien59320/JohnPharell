@@ -50,14 +50,17 @@ btnactive.forEach( btn => {
     }
    
   });
-        btnactive.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = document
-                .querySelector(tab.dataset.tabValue);
-                
-                tabInfos.forEach(tabInfo => {
-                    tabInfo.classList.remove('activeText')
-                })
-                target.classList.add('activeText');
-            })
-        })
+btnactive.forEach(tab => {
+  tab.addEventListener('click', () => {
+      const target = document
+      .querySelector(tab.dataset.tabValue);
+      
+      tabInfos.forEach(tabInfo => {
+          tabInfo.classList.remove('activeText')
+      })
+      target.classList.add('activeText');
+  })
+})
+
+
+       

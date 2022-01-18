@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./filter.js" defer></script>
+    <script src="./app.js" defer></script>
+    <!----LinkBoxIcon------->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!----LinkFontAsewome------->
+    <link rel="stylesheet" type="text/css" href="fontawesome-5/fontawesome-css/all.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
+    <title>JohnPharell</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav d-flex">
+                <div class="icon1">
+                    <i class="bx bx-menu"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html"><span>John</span>Pharell</a>
+                </div>
+                <div class="menu">
+                    <div class="top">
+                        <span class="fermer">Fermer  <i class="bx bx-x"></i></span>
+                    </div>
+                        <!----NAVIGATION------->
+                    <ul class="navList d-flex">
+                        <li class="navItem">
+                            <a href="./index.html" class="navLink">Accueil</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="./collection.html" class="navLink">Boutique</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="./Faq.html" class="navLink">F.A.Q</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="./about.html" class="navLink">A propos de nous</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="./contact.html" class="navLink">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                    <!----ICONES------->
+                <div class="icons d-flex">
+                    <div> <i class="bx bx-search"></i></div>
+                    <div> <i class="bx bx-user"></i></div>
+                    <div> <i class="bx bx-heart"></i></div>
+                    <div> <i class="bx bx-shopping-bag"></i>
+                          <span class='alignCenter'> 0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+  
+    <section class="collection">
+        
+            <section class="filter">
+                <ul class="indicator">
+                    <li data-filter="all" class="active"><a href="#">Tout</a></li>
+                    <li data-filter="Blazer"><a href="#">Manteau</a></li>
+                    <li data-filter="Watch"><a href="#">Montre</a></li>
+                    <li data-filter="Shoes"><a href="#">Chaussure</a></li>
+                    <li data-filter="Mobile"><a href="#">Mobiles</a></li>
+                    <li data-filter="Accessories"><a href="#">Accessoires</a></li>
+                </ul>
+                <div class="filter-condition">
+                    <span>Trier par</span>
+                    <select name="" id="select">
+                        <option value="Default">Defaut</option>
+                        <option value="LowToHigh">Prix le plus bas</option>
+                        <option value="HighToLow">Prix le plus haut</option>
+                    </select>
+                </div>
+            </section>
+            <div class="product-field">
+                <ul class="items">
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="./img/wa1.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Watch</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€45.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/bz1.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Blazer</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€35.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/wa2.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Watch</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€40.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/bz2.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Blazer</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€42.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/wa3.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Watch</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€46.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/bz4.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Blazer</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€55.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/so.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Shoes</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€25.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/samsung.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Mobile</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€20.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/so1.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Shoes</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€15.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/so2.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Shoes</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€22.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/one.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Mobile</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€33.78</h4>
+                    </li>
+                    <li data-category="" data-price="">
+                        <picture>
+                            <img src="img/so3.png" alt="">
+                        </picture>
+                        <div class="detail">
+                            <p class="icon">
+                               <span><i class="far fa-heart"></i></span>
+                               <span><i class="far fa-share-square"></i></span>
+                               <span><i class="fas fa-shopping-basket"></i></span>
+                            </p>
+                            <strong>Shoes</strong>
+                            <span>Lorem, ipsum dolor sit amet consectetur.</span>
+                            <small>Acheter</small>
+                        </div>
+                        <h4>€44.78</h4>
+                    </li>
+                </ul>
+            </div>
+        
+
+    </section>
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footerContainer">
+                <div class="footerCenter">
+                    <h3>INFORMATION</h3>
+                    <a href="#">A Propos de Nous</a>
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contactez Nous</a>
+                    <a href="#">Notre Equipe</a>
+                </div>
+                <div class="footerCenter">
+                    <h3>MON COMPTE</h3>
+                    <a href="#">Mon Compte</a>
+                    <a href="#">Historique des Commandes</a>
+                    <a href="#">Liste de Souhait</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Politique de Retour</a>
+                </div>
+                <div class="footerCenter">
+                    <h3>CONTACTEZ NOUS</h3>
+                    <div>
+                        <span>
+                            <i class="fa fa-map-marker"></i>
+                        </span>
+                        <p>Av de l'europe, Haubourdin, FR</p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <p>JohnPharell59@gmail.com</p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <p>03.20.00.00.00</p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-paper-plane"></i>
+                        </span>
+                        <p>Haubourdin, France</p>
+                    </div>
+                </div>
+                <div class="footerCenter">
+                    <h3>Rejoignez-nous</h3>
+                    <div class="social">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-snapchat-square"></i>
+                        </a>
+                        <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+            <p>copyright©2022 Tous droits reservés
+            <a href="https://www.linkedin.com/in/julien-spileers-5763741a7/">Julien Spileers</a></p>
+        </div>
+</body>
+
+</html>
