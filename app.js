@@ -33,3 +33,31 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
       menu.classList.remove('watch')
 })
+
+
+const btnactive = document.querySelectorAll('.aboutNav button')
+const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+
+
+btnactive.forEach( btn => {
+    //fonction active 
+    btn.onclick = function() {
+      btnactive.forEach(btn => {
+        btn.className = "";
+      })
+   btn.className = "active";
+    }
+   
+  });
+        btnactive.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                .querySelector(tab.dataset.tabValue);
+                
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('activeText')
+                })
+                target.classList.add('activeText');
+            })
+        })
