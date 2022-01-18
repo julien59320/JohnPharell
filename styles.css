@@ -44,6 +44,11 @@ img {
   max-width: 100%;
 }
 
+.background {
+  background: var(--grey);
+  padding: 3rem;
+}
+
 /*---------debut code-------*/
 /*---------Section Promo-------*/
 .promo {
