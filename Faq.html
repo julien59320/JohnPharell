@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./appo.js" defer></script>
+    <!----LinkBoxIcon------->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!----LinkFontAsewome------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
+    <title>JohnPharell</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav d-flex">
+                <div class="icon1">
+                    <i class="bx bx-menu"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html"><span>John</span>Pharell</a>
+                </div>
+                <div class="menu">
+                    <div class="top">
+                        <span class="fermer">Fermer  <i class="bx bx-x"></i></span>
+                    </div>
+                        <!----NAVIGATION------->
+                    <ul class="navList d-flex">
+                        <li class="navItem">
+                            <a href="./index.html" class="navLink">Accueil</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">Boutique</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="./Faq.html" class="navLink">F.A.Q</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">A propos de nous</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                    <!----ICONES------->
+                <div class="icons d-flex">
+                    <div> <i class="bx bx-search"></i></div>
+                    <div> <i class="bx bx-user"></i></div>
+                    <div> <i class="bx bx-heart"></i></div>
+                    <div> <i class="bx bx-shopping-bag"></i>
+                          <span class='alignCenter'> 0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="faq">
+        <div class="title">
+            <h1> <span>Vos questions</span> les plus fréquentes</h1>
+        </div>
+
+        <!-- First question -->
+        <h3 id="faqTitle">1) Livraison et expédition</h3>
+        <article class="question">
+            <div class="question-title">
+                <p>Délais d’expédition</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+              
+            </div>
+
+            <div class="reponse">
+                <h5>Quand ma commande sera-t-elle expédiée?  </h5>
+                <p>
+                    Si vous réglez par carte bancaire, par PayPal ainsi que via Amazon, l'expédition aura lieu dès réception de votre paiement. Si vous choisissez de régler par virement, le temps d'expédition sera légèrement rallongé puisque nous attendons la réception du paiement avant de procéder à celle-ci.               
+                </p>
+            </div>
+        </article>
+
+        <!-- Second question -->
+        <article>
+            <div class="question-title">
+                <p>Suivi de l’envoi</p>
+                <button class="btn1"><i class="far  fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+            </div>
+
+            <div class="reponse">
+                <h5>Comment puis-je suivre l’envoi de mon colis ?</h5>
+                <p>
+                    Lorsque votre commande aura été expédiée, vous recevrez un mail vous permettant de suivre l'acheminement de votre colis.                </p>
+            </div>
+        </article>
+        <!-- troisieme question -->
+        <article>
+            <div class="question-title">
+                <p>Délais de livraison</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5>Quels sont les délais de livraison ?  </h5>
+                <p>
+                    Avec UPS, les délais de livraison sont de de 5 à 7 jours ouvrés dès réception du paiement.
+                    Avec la DeutschePost, les délais de livraisons sont de 10 à 15 jours ouvrés après réception du paiement. 
+                    Si votre article est gravé, il est expédié 2 à 3 jours après que vous ayez passé commande.               
+                </p>
+            </div>
+        </article>
+        <!-- Quatrieme question -->
+        <article>
+            <div class="question-title">
+                <p>Tentative de livraison échouée</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5> Ma commande va-t-elle être renvoyée une nouvelle fois en cas de tentative de livraison infructueuse suite à une erreur de ma part ?  </h5>
+                <p>
+                    Nos clients sont responsables de l’adresse renseignée au moment de la livraison. Si cette dernière n’était pas correcte, ce qui cause le renvoi du colis à l’expéditeur, il appartient au client de renouveler sa commande. Les coûts engendrés par la nouvelle commande sont à la charge du client                </p>
+            </div>
+        </article>
+        <!-- cinquieme question -->
+        <h3 id="faqTitle">2) Paiement</h3>
+        <article>
+            <div class="question-title">
+                <p>Possibilités de paiement</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <p>
+                    Voici les différents modes de paiement que nous proposons :
+                    <ul>
+                        <li>PayPal</li>
+                        <li>Virement bancaire</li>
+                        <li>Carte de crédit</li>
+                        <li>Prélèvement automatique</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Paiement via PayPal</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <p>
+                    Vous pouvez régler vos achats via PayPal. Pour ce faire, la création d’un compte PayPal est nécessaire. Vous serez ensuite automatiquement renvoyé sur la page PayPal pour encaissement.</p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Carte de crédit</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <p>
+                    Vous pouvez payer par carte bancaire Visa et Mastercard en sélectionnant le mode de paiement “carte bancaire” lors de l’encaissement. Lors de l’apparition du champ permettant le renseignement des données bancaires, sélectionner “Visa” ou "Mastercard" dans le menu déroulant.
+                </p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Prélèvement automatique</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <p>
+                    Le prélèvement automatique est simple, pratique et sûr. Il vous suffit simplement de renseigner vos données bancaires. La somme due vous sera alors prélevée via Payone après l'envoi de votre commande. Ce procédé est automatiquement activé pour nos clients réguliers de Gusti-Cuir.fr. Les articles commandés seront automatiquement expédiés. Votre compte ne sera débité qu'aprés l'envoi de la marchandise.
+                </p>
+            </div>
+        </article>
+        <h3 id="faqTitle">3) Retour / Échange / Réparation</h3>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Rétractation</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5>Comment puis-je renvoyer un produit et comment se déroule le remboursement ? </h5>
+                <p>
+                    Vous disposez d'un droit de rétractation de 30 jours sans justification. Le délai de rétractation est calculé à partir du jour où vous avez reçu le dernier article de votre commande (par exemple lors d’une commande en plusieurs parties). Nous acceptons votre produit après ce délai s’il n’a pas été utilisé. 
+                    Vous trouverez nos informations quant au droit de rétractation ici : information sur le droit de rétractation.                
+                </p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Échange</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5>Comment puis-je échanger mon sac ?</h5>
+                <p>
+                    Nous ne proposons pas d’échanges. Si un produit ne vous convient pas, il peut tout simplement nous être retourné. Nous procéderons ensuite au remboursement de l'achat après la réception du colis dans nos entrepôts. Il n'est pas nécessaire d'attendre le fin du processus de retour et de remboursement pour re-commander le produit souhaité en premier lieu. Il n’est malheureusement pas possible de compenser le montant de commandes différentes.
+                    Toutefois, si votre produit comporte une anomalie, merci de contacter le service clientèle. Dans certains cas, un échange pourra avoir lieu, mais nous ne pouvons pas vous le garantir.                    
+                </p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p>Frais de retour lors d’une réclamation</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5>Qui prend en charge les frais de port lors d’une réclamation ?</h5>
+                <p>
+                    Une réclamation ne peut être acceptée qu’après discussion avec le service clientèle. Dans ce cas, nous prenons en charge les frais de renvoi. Pour ce faire, merci d’utiliser le bon de retour fourni. Nous vous prions d’utiliser cette offre et de ne pas affranchir votre colis vous-même. Dans le cas inverse, nous ne pourrons malheureusement pas vous rembourser les frais d’envoi                </p>
+            </div>
+        </article>
+        <!-- sizieme question -->
+        <article>
+            <div class="question-title">
+                <p> Réparation</p>
+                <button class="btn1"><i class="far fa-plus-square"></i><i id="minus" class="far fa-minus-square"></i>
+                </button>
+       
+            </div>
+
+            <div class="reponse">
+                <h5>Mon sac en Cuir doit être réparé. Dois-je le renvoyer ? Qui prend en charge les coûts de réparation ?</h5>
+                <p>
+                    Merci d’adresser toute réclamation au service clientèle afin que celui-ci vous propose une solution adaptée. Une de ces trois solutions vous sera proposée : un remboursement, un échange ou une réparation.</p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

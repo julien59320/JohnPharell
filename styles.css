@@ -392,6 +392,69 @@ img {
   color: var(--Whithe);
 }
 
+/*---------PAGE FAQ-------*/
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 5rem auto;
+}
+.question-title {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  align-items: center;
+  padding: 2rem 20px;
+  border-bottom: 2px solid var(--Whithe);
+}
+
+.question-title p {
+  margin-right: 5rem;
+  color: var(--Whithe);
+}
+
+.btn1 {
+  background-color: var(--black);
+  border: none;
+  font-size: 1.5rem;
+  color: var(--Whithe);
+}
+#minus {
+  display: none;
+}
+
+.showText .fa-plus-square {
+  display: none;
+}
+.showText #minus {
+  display: block;
+}
+.reponse {
+  display: none;
+  flex-direction: column;
+  padding: 3rem;
+  line-height: 1.5;
+  background: var(--colorPrimary);
+  transition: 5s;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.reponse h5 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#faqTitle {
+  margin: 5rem 0;
+  color: var(--colorPrimary);
+  font-size: 2rem;
+}
+.showText .reponse {
+  display: flex;
+}
+
 /*---------MediaScreen Ecran 1200px-------*/
 @media only screen and (max-width: 1200px) {
   /*---------Section Header-------*/
