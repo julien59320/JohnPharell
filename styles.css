@@ -198,7 +198,7 @@ img {
 }
 /*---------SERVICE-------*/
 .section {
-  padding: 10rem 0 0 0;
+  padding: 5rem 0 0 0;
   text-align: center;
 }
 .service {
@@ -334,10 +334,18 @@ img {
   grid-row-start: 5;
   grid-row-end: 9;
 }
+.category p {
+  color: var(--black);
+  z-index: 1000;
+  position: relative;
+  top: -4rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 1rem;
+}
 /*---------Footer-------*/
 .footer {
   background: var(--black);
-  padding: 6rem 1rem 0;
+  padding: 4rem 1rem;
   line-height: 3rem;
   margin-top: 5rem;
 }
